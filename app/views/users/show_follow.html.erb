@@ -1,10 +1,8 @@
+<% provide(:headline, @headline)%>
 <div class="container">
 	<div class="row">
-		<div class="col-xs-3">
-			<%= render 'users/template', {user: @user, book: @book} %>
-		</div>
-		<div class="col-xs-9">
-			<h2>Users</h2>
+		<div class="col-xs-12">
+			<h2><%= yield(:headline) %></h2>
 			<table class="table">
 				<thead>
 					<tr>
